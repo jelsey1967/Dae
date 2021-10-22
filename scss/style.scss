@@ -38,6 +38,13 @@ body {
 		justify-content: end;
 	}
 
+	@media(max-width: 500px){
+		height: auto;
+		justify-content: space-between;
+		align-items: center;
+		padding: 60px 5px 10px 5px;
+	}
+
 
 	&::before{
 		content: '';
@@ -62,6 +69,20 @@ body {
 			top: 50%;
 			margin-top: -21px;
 		}
+
+		@media(max-width: 500px){
+			top: 10px;
+			left: 50%;
+			margin: 0 0 0 -45px;
+		}
+	}
+
+	&__nav{
+		@media(max-width: 340px){
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 20px;
+		}
 	}
 
 	&__link {
@@ -80,6 +101,14 @@ body {
 		@media(max-width: 1100px){
 			margin-left: 10px;
 		}
+
+		@media(max-width: 500px){
+			margin-left: 5px;
+		}
+
+		@media(max-width: 340px){
+			margin: 0 0 5px 0;
+		}
 	}
 
 	&__user {
@@ -89,6 +118,10 @@ body {
 		@media(max-width: 900px){
 			margin-left: 20px;
 		}
+
+		@media(max-width: 500px){
+			margin-left: 5px;
+		}
 	}
 
 	&__acc {
@@ -96,6 +129,10 @@ body {
 		line-height: 22.4px;
 		color: $TextColor;
 		margin-right: 20px;
+
+		@media(max-width: 500px){
+			margin-right: 10px;
+		}
 	}
 
 	&__shop {
