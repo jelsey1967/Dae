@@ -25,6 +25,6 @@ const swiper = new Swiper('.slider-bottle', {
 
 const swiperFollow = new Swiper('.slider-follow', {
 	slidesPerView: 'auto',
-	loopedSlides: false,
+	loopedSlides: true,
 	spaceBetween: 9,
 });
